@@ -4,7 +4,7 @@
 <head>
 
 
-    <title>clavIEEE</title>
+    <title>Profile</title>
 
     <!-- -------------------- META ------------------------------------------- -->
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -23,8 +23,10 @@
     <script type="text/javascript" src="../../js/materialize.js"></script>
     <script type="text/javascript" src="../../js/js.cookie.js"></script>
     <script>
-        
-        if (Cookies.get('username') == undefined) { window.location = "../login.html"; }
+        if (Cookies.get('username') == undefined) {
+            window.location = "../login.html";
+        }
+
     </script>
 
 
@@ -41,7 +43,7 @@
     <!-- ----------------------------NAVBAR----------------------------------- -->
     <nav class="fixed">
         <div class="nav-wrapper blue darken-2">
-            <a href="#!" class="brand-logo">clavIEEE</a>
+            <a href="#!" class="brand-logo">Profile</a>
             <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li class="waves-effect"><a href="../../home.html">Home</a></li>
@@ -83,93 +85,94 @@
 
 
     <!-- -------------------- CONTENT ------------------------------------------- -->
-    <!-- div class="container">
-        <h4 class="center">clavIEEE</h4>
-        <p class="center">Coming Soon!</p>
 
-
-    </div><-->
     <div class="container">
-        <h4 class="center">Developed with Love, a Platform for Connecting IEEE Resources!</h4>
+        <br>
         <div class="row">
-            <div class="col s6 m3">
-                <div class="card">
-                    <div class="card-image tiny">
-                        <img src="../../images/sample-1.jpg">
-                        <span class="card-title">About IEEE</span>
-                    </div>
 
-                    <div class="card-action">
-                        <a href="http://www.ieee.org/about/index.html">Open<i class="material-icons right">keyboard_arrow_right</i></a>
-                    </div>
+            <div class="col s12 m3">
+                <div class="center">
+                    <img src="student.png" alt="picture" class="profile-picture" id="user-img">
                 </div>
             </div>
-            <div class="col s6 m3">
-                <div class="card">
-                    <div class="card-image tiny">
-                        <img src="../../images/sample-1.jpg">
-                        <span class="card-title"><p class="flow-text">IEEE Region 10</p></span>
-                    </div>
+            <div class="col s12 m9">
+                <div>
+                    <table>
+                        <tbody id="info-table-body">
+                            <!--<tr>
+								<td>Name</td>
+								<td id="user-name"></td>
 
-                    <div class="card-action">
-                        <a href="http://www.ieeer10.org/">Open<i class="material-icons right">keyboard_arrow_right</i></a>
-                    </div>
+							</tr>
+							<tr>
+								<td>Reg. No.</td>
+								<td id="user-reg-no"></td>
+
+							</tr>
+							<tr>
+								<td>Degree</td>
+								<td id="user-degree"></td>
+
+							</tr>
+							<tr>
+								<td>Branch</td>
+								<td id="user-branch"></td>
+
+							</tr>
+							<tr>
+								<td>Semester</td>
+								<td id="user-sem"></td>
+
+							</tr>
+							<tr>
+								<td>Father's Name</td>
+								<td id="user-fname"></td>
+
+							</tr>
+							<tr>
+								<td>Mother's Name</td>
+								<td id="user-mname"></td>
+
+							</tr>
+							<tr>
+								<td>Gender</td>
+								<td id="user-gender"></td>
+
+							</tr>
+							<tr>
+								<td>DOB</td>
+								<td id="user-dob"></td>
+
+							</tr>
+							<tr>
+								<td>Height</td>
+								<td><span id="user-height"></span> cm</td>
+
+							</tr>
+							<tr>
+								<td>Weight</td>
+								<td><span id="user-weight"></span> kg</td>
+
+							</tr>
+							<tr>
+								<td>Blood Group</td>
+								<td id="user-blood"></td>
+
+							</tr>
+-->
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="col s6 m3">
-                <div class="card">
-                    <div class="card-image tiny">
-                        <img src="../../images/sample-1.jpg">
-                        <span class="card-title">IEEE India Council</span>
-                    </div>
 
-                    <div class="card-action">
-                        <a href="http://sites.ieee.org/indiacouncil/">Open<i class="material-icons right">keyboard_arrow_right</i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s6 m3">
-                <div class="card">
-                    <div class="card-image tiny">
-                        <img src="../../images/sample-1.jpg">
-                        <span class="card-title">IEEE Bombay Section</span>
-                    </div>
 
-                    <div class="card-action">
-                        <a href="http://ieeebombay.org/">Open<i class="material-icons right">keyboard_arrow_right</i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s6 m3">
-                <div class="card">
-                    <div class="card-image tiny">
-                        <img src="../../images/sample-1.jpg">
-                        <span class="card-title">IEEE Audio Conferencing</span>
-                    </div>
 
-                    <div class="card-action">
-                        <a href="#">Open<i class="material-icons right">keyboard_arrow_right</i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s6 m3">
-                <div class="card">
-                    <div class="card-image tiny">
-                        <img src="../../images/sample-1.jpg">
-                        <span class="card-title">IEEE Video Conferencing</span>
-                    </div>
 
-                    <div class="card-action">
-                        <a href="#">Open<i class="material-icons right">keyboard_arrow_right</i></a>
-                    </div>
-                </div>
-            </div>
-            
-            
-            http://eleccomm.ieee.org/personal-aliases.shtml 
         </div>
 
     </div>
+
+
     <!-- -------------------- CONTENT ------------------------------------------- -->
 
 
@@ -192,7 +195,8 @@
 
 
     <script type="text/javascript" src="../../js/script.js" id="global-script"></script>
-    <script type="text/javascript" src="clavIEEE.js"></script>
+    <script type="text/javascript" src="profile.js"></script>
+
 
 
 
